@@ -1,11 +1,7 @@
-/* Print CSS */
-
+    
 header,
 .form-container,
 footer,
-.back-to-top {
-    display: none;
-}
-body {
-    margin: 0 0.5in;
+.back-to-top{
+    display:none;
 }
