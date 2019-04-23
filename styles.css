@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 .hero {
     align-self: center;
     justify-self: center;
@@ -32,8 +36,6 @@ input {
     max-width: 100%;
     vertical-align: middle;
 }
-
-input:focus;
 
 textarea:focus {
     border-radius: 7px;
@@ -118,7 +120,7 @@ footer {
 
     /* hero content & about-content */
 
-    content {
+    .content {
         grid-template-columns: 1fr 8fr 1fr;
     }
 
@@ -140,6 +142,10 @@ footer {
         align-self: center;
         justify-self: center;
     }
+	
+	figure {
+		grid-template-columns: 1fr 1fr;
+	}
 
     /* article */
 
@@ -184,7 +190,9 @@ footer {
 
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "gallery-title gallery-title gallery-title""figure1 figure2 figure3";
+        grid-template-areas: 
+					"gallery-title gallery-title gallery-title"
+					"figure1 figure2 figure3";
     }
 
     .gallery h3 {
@@ -207,6 +215,10 @@ footer {
         align-self: center;
         justify-self: center;
     }
+	
+	figcaption {
+		margin-left: 1rem;
+	}
 }
 
 /* article */
